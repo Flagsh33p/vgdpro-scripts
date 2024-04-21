@@ -31,22 +31,22 @@ function Drajewlcheck(c,target)
 	local levelnum = {0,0,0,0,0}
 	if g:GetCount()>0 then
 		for tc in VgF.Next(g) do
-    		if tc:IsLevel(0) and levelnum[0]==0
-    		then
-    			levelnum[0]=1
-    		elseif tc:IsLevel(1) and levelnum[1]==0
-    		then
+			if tc:IsLevel(0) and levelnum[0]==0
+			then
+				levelnum[0]=1
+			elseif tc:IsLevel(1) and levelnum[1]==0
+			then
  		   		levelnum[1]=1
-	    	elseif tc:IsLevel(2) and levelnum[2]==0
-	    	then
-	    		levelnum[2]=1
-	    	elseif tc:IsLevel(3) and levelnum[3]==0
-	    	then
-	    		levelnum[3]=1
-	    	elseif tc:IsLevel(4) and levelnum[4]==0
-	    	then
-	    		levelnum[4]=1
-	    	end
+			elseif tc:IsLevel(2) and levelnum[2]==0
+			then
+				levelnum[2]=1
+			elseif tc:IsLevel(3) and levelnum[3]==0
+			then
+				levelnum[3]=1
+			elseif tc:IsLevel(4) and levelnum[4]==0
+			then
+				levelnum[4]=1
+			end
 		end
 	end
 	local sum=0
